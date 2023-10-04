@@ -299,6 +299,7 @@
       \ifthenelse{\equal{#1}{github}}       {\collectionadd[github]{socials}       {\protect\httpslink[#3]{github.com/#3}}}                        {}%
       \ifthenelse{\equal{#1}{gitlab}}       {\collectionadd[gitlab]{socials}       {\protect\httpslink[#3]{gitlab.com/#3}}}                        {}%
       \ifthenelse{\equal{#1}{stackoverflow}}{\collectionadd[stackoverflow]{socials}{\protect\httpslink[#3]{stackoverflow.com/users/#3}}}           {}%
+      \ifthenelse{\equal{#1}{stackexchange}}{\collectionadd[stackexchange]{socials}{\protect\httpslink[#3]{emacs.stackexchange.com/users/#3}}}     {}%
       \ifthenelse{\equal{#1}{bitbucket}}    {\collectionadd[bitbucket]{socials}    {\protect\httpslink[#3]{bitbucket.org/#3}}}                     {}%
       \ifthenelse{\equal{#1}{skype}}        {\collectionadd[skype]{socials}        {#3}}                                                           {}%
       \ifthenelse{\equal{#1}{orcid}}        {\collectionadd[orcid]{socials}        {\protect\httpslink[#3]{orcid.org/#3}}}                         {}%
@@ -364,6 +365,7 @@
 \newcommand*{\githubsocialsymbol}       {}
 \newcommand*{\gitlabsocialsymbol}       {}
 \newcommand*{\stackoverflowsocialsymbol}{}
+\newcommand*{\stackexchangesocialsymbol}{}
 \newcommand*{\bitbucketsocialsymbol}    {}
 \newcommand*{\skypesocialsymbol}        {}
 \newcommand*{\orcidsocialsymbol}        {}
