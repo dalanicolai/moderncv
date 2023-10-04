@@ -916,8 +916,8 @@
 %   Note:
 %       - The width of the columns can be adjusted by the \setcvskillcolumns command, see \setcvskillcolumns.
 
-\NewDocumentCommand\skillMatrix@HeaderDefaultOne{}{Level}
-\NewDocumentCommand\skillMatrix@HeaderDefaultTwo{}{Skill}
+\NewDocumentCommand\skillMatrix@HeaderDefaultOne{}{Skill}
+\NewDocumentCommand\skillMatrix@HeaderDefaultTwo{}{Level}
 \NewDocumentCommand\skillMatrix@HeaderDefaultThree{}{Years}
 \NewDocumentCommand\skillMatrix@HeaderDefaultFour{}{Comment}
 % Definition of \cvskillhead valid for moderncvbodyi, moderncvbodyii, moderncvbodyiii, moderncvbodyiv
@@ -997,7 +997,7 @@
                     p{\cvskill@experiencewidth} @{\hspace{\skillmatrix@padding}}%
                     p{\skillmatrix@commentwidth}@{}}%
                 \cdashline{2-5}[.6pt/1pt]
-                \raggedleft\hintstyle{#3} &\centering \cvskill{#4} &\centering {#5} & \centering {#6} &{\itshape#7}%
+                \raggedleft\hintstyle{#3} &{#4} &\centering \cvskill{#5} & \centering {#6} &{\itshape#7}%
             \end{tabular}%
         \endgroup
         \par\addvspace{#2}
@@ -1008,7 +1008,7 @@
                 p{\cvskill@experiencewidth}%
                 @{\hspace{\skillmatrix@padding}}%
                 p{\skillmatrix@commentwidth}@{}}%
-            \raggedleft\hintstyle{#3} &\centering \cvskill{#4} &\centering {#5} & \centering {#6} &{\itshape#7}%
+            \raggedleft\hintstyle{#3} &{#4} &\centering \cvskill{#5} & \centering {#6} &{\itshape#7}%
         \end{tabular}%
         \par\addvspace{#2}
     }
@@ -1032,7 +1032,7 @@
                                 p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}}%
                                 p{\cvskill@experiencewidth} @{\hspace{\skillmatrix@padding}}p{\skillmatrix@commentwidth}@{}}%
     %                 \cline{3-6}%
-                    & \raggedleft\hintstyle{#3} &\centering \cvskill{#4} &\centering {#5} & \centering {#6} &{\itshape#7}\\[#2]%
+                    & \raggedleft\hintstyle{#3} &{#4} &\centering \cvskill{#5} & \centering {#6} &{\itshape#7}\\[#2]%
                 \end{tabular}%
             \endgroup%
         }%
